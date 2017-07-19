@@ -19,7 +19,7 @@ public class EmployeeRest {
     @Autowired
     EmployeeService employeeService;
 
-    @RequestMapping(value = "/employee", method = RequestMethod.GET)
+    @RequestMapping(value = "/listAllEmployees", method = RequestMethod.GET)
     public List<Employee> getAllEmployees(){
         return employeeService.getEmployees();
     }
